@@ -1,0 +1,25 @@
+1. Kyrel practice 1
+
+
+function main(n) {
+moveRight();
+moveRight();
+useBlue();
+draw();
+}
+
+2.Kyrel practice 2
+
+var initial_state = [ 'b', 'b', 'b', 'b', 'b' ];
+
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+moveRight();
+moveRight();
+erase();
+}
