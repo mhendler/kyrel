@@ -1,0 +1,116 @@
+Day 3
+
+PROBLEM 1
+
+var initial_state = [ '.', '.', '.', '.', '.' ];
+
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+useBlue();
+for(var j=0; j<5; j++) {
+  draw();
+  moveRight();
+}
+
+PROBLEM 2
+
+var initial_state = [ 'b', '.', '.', '.', '.' ];
+
+function main(n) {
+
+  
+//////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+if ( onBlue() ) {
+  useBlue()
+} else if ( onGreen() ) {
+  useGreen();
+}
+
+for(var i=0; i<5; i++) {
+  draw();
+  moveRight();
+}
+
+PROBLEM 3
+
+var initial_state = [ '.', '.', '.', '.', '.' ];
+
+function main(n) {
+
+  
+//////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+var n = 5
+
+useBlue;
+for(i = 0; i < n; i++) {
+    draw();
+    moveRight();
+}
+
+PROBLEM 4
+
+var initial_state = [ 'b', 'b', 'b', 'b', 'b' ];
+
+function main(n) {
+
+  
+//////////////////////////////////
+  ////                          ////
+  //// v OUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+for(var i=0; i<5; i++){
+    if ( i%2 === 0 ){
+        erase();
+    }
+    moveRight();
+}
+
+PROBLEM 5
+
+var initial_state = [ 'b', 'b', 'b', 'b', 'b' ];
+
+function main(n) {
+
+  
+//////////////////////////////////
+  ////                          ////
+  //// v OUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+for(var i=0; i<5; i++){
+    if ( i%2 !== 0 ){
+        erase();
+    }
+    moveRight();
+}
+
+
+
+
+
+
+
+PROBLEM 6
+
+n = 4; 
+
+for(var i=0; i<5; i++){
+    if ( (i+1)%n === 0 ){
+        erase();
+    }
+    moveRight();
+}
