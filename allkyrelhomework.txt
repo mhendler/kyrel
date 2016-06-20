@@ -168,3 +168,96 @@ for (var i = 0; i < initial_state.length; i++) {
     }
 moveLeft();
 }
+
+DAY 5 PROBLEMS
+
+1.var initial_state = [ '.', '.', 'b', '.', '.' ];
+
+function main(n) {
+
+  
+//////////////////////////////////
+  ////                          ////
+  //// v OUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+for (var i = 0; i < 5; i++){
+  if (onBlue()) {
+    erase();
+    moveRight();
+    useBlue();
+    draw();
+  }
+  moveRight();
+}
+
+2. var initial_state = [ 'g', 'b', 'b', '.', '.' ];
+
+function main(n) {
+
+  
+//////////////////////////////////
+  ////                          ////
+  //// v OUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+for (var i = 0; i < 5; i++){
+  if (onBlue()) {
+    moveLeft();
+    erase();
+    moveRight();
+    draw();
+  }
+  moveRight();
+}
+
+3.var initial_state = [ 'b', '.', 'b', '.', '.' ];
+
+function main(n) {
+
+  
+//////////////////////////////////
+  ////                          ////
+  //// v OUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+for (var i = 0; i < 5; i++){
+    if (onBlue()) {
+    erase();
+    moveRight();
+    moveRight();
+    erase();
+    moveRight();
+    draw();
+    moveRight();
+    draw();
+  } else {
+}
+moveRight();
+}
+
+4. var initial_state = [ '.', 'b', 'b', '.', 'b' ];
+            
+function main(n) {
+
+  
+//////////////////////////////////
+  ////                          ////
+  //// v OUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+
+var numBlues = 0;
+useBlue();
+
+for(var j = 0; j < 5; j++) {
+  if(onBlue()) {
+    numBlues = numBlues + 1;
+  }
+  draw(); 
+  moveRight();
+}
+for(var i = 0; i < (5 - numBlues); i++) {
+  erase();
+  moveLeft();
+}
